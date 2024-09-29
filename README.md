@@ -21,8 +21,8 @@ A interface é intuitiva e responsiva, ideal para prática e aprendizado de dese
 ### Clonando o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-cd nome-do-repositorio
+git clone https://github.com/gus2222/calculadora.git
+cd calculadora
 ```
 
 ### Executando o Projeto Localmente
