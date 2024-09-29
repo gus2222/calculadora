@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Calculadora em React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Calculadora simples desenvolvida em React, que permite realizar operações básicas como adição,subtração, multiplicação e divisão.
+A interface é intuitiva e responsiva, ideal para prática e aprendizado de desenvolvimento front-end com React.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- **Operações Básicas**: Realiza adição, subtração, multiplicação e divisão.
+- **Limpar Entrada**: O botão "C" permite limpar todos os valores.
+- **Entrada de Números**: Permite a entrada de números de 0 a 9.
+- **Entrada de Ponto**: O botão "." permite a entrada de números decimais.
+- **Resultado**: O botão "=" calcula e exibe o resultado da expressão.
 
-### `npm start`
+## Como Utilizar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Pré-requisitos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Node.js](https://nodejs.org/) instalado na sua máquina.
+- [Docker](https://www.docker.com/) instalado na sua máquina (se optar por usar Docker).
 
-### `npm test`
+### Clonando o Repositório
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+cd nome-do-repositorio
+```
 
-### `npm run build`
+### Executando o Projeto Localmente
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Instalar Dependências**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   No diretório do projeto, execute:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+2. **Iniciar o Servidor de Desenvolvimento**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   Execute o seguinte comando para iniciar a aplicação:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   A aplicação estará disponível em [http://localhost:3000](http://localhost:3000).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Executando o Projeto com Docker
 
-## Learn More
+1. **Construir a Imagem Docker**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   No diretório do projeto, execute o seguinte comando:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   docker build -t nome-da-imagem .
+   ```
 
-### Code Splitting
+2. **Executar o Contêiner**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   Após a construção da imagem, execute o contêiner usando o comando:
 
-### Analyzing the Bundle Size
+   ```bash
+   docker run -p 3000:3000 nome-da-imagem
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   A aplicação estará disponível em [http://localhost:3000](http://localhost:3000).
 
-### Making a Progressive Web App
+## Estrutura do Projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+nome-do-repositorio/
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── package.json
+└── README.md
+```
 
-### Advanced Configuration
+## Contribuição
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Sinta-se à vontade para abrir issues ou pull requests. Qualquer contribuição é bem-vinda!
 
-### Deployment
+## Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+```
 
-### `npm run build` fails to minify
+### Ajustes Personalizados
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Certifique-se de substituir `seu-usuario/nome-do-repositorio` pelo seu usuário e o nome real do repositório no GitHub. Também, ajuste o nome da imagem Docker conforme desejado. 
