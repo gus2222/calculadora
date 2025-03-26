@@ -89,6 +89,4 @@ Sinta-se à vontade para abrir issues ou pull requests. Qualquer contribuição 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 ```
 
-### Ajustes Personalizados
 
-Certifique-se de substituir `seu-usuario/nome-do-repositorio` pelo seu usuário e o nome real do repositório no GitHub. Também, ajuste o nome da imagem Docker conforme desejado. 
